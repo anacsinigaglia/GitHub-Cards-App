@@ -1,2 +1,2 @@
-Projeto do curso "React: Getting Started" do Pluralsight, usando componentes com classes.
+Projeto do curso "React: Getting Started" do Pluralsight, usando classe na maioria dos componentes.
 Trata-se de um app de pesquisa de cards do GitHub ("GitHub Cards App").

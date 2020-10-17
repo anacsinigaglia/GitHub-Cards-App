@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { testData } from './components/testData';
+import Form from './components/Form/Form';
 import ListCards from './components/ListCards/ListCards';
 
 class App extends React.Component {
@@ -7,7 +9,8 @@ class App extends React.Component {
     return (
       <div>
         <div className="header">The GitHub Cards App</div>
-        <ListCards />
+        <Form />
+        <ListCards profiles={ testData } />
       </div>
     );
   }
