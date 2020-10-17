@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class Form extends React.Component {
     state = { userName: '' }; 
@@ -7,8 +8,9 @@ class Form extends React.Component {
 
     handleSubmit = async (event) => {
         event.preventDefault(); //só pra não dar refresh na página quando dermos submit
-        const resp = await axios.get(`https://api.github.com/user/${this.state.userName}`);
+        const resp = await axios.get(`https://api.github.com/users/${this.state.userName}`);
         this.props.onSubmit(resp.data);
+        this.setState({ userName: '' }); //esvazia o input
     };
 
     render() {
