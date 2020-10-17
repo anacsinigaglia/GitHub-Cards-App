@@ -3,12 +3,14 @@ import './Card.scss';
 
 class Card extends React.Component {
     render() {
+        const profile = this.props;
+
         return (
             <div className="github-profile">
-                <img src="https://placehold.it/75" />
+                <img src={profile.avatar_url} />
                 <div className="info">
-                    <div className="name">Name here</div>
-                    <div className="company">Company here</div>
+                    <div className="name">{profile.name}</div>
+                    <div className="company">{profile.company}</div>
                 </div>
             </div>
         );
