@@ -1,2 +1,5 @@
 Projeto do curso "React: Getting Started" do Pluralsight, usando classe na maioria dos componentes.
 Trata-se de um app de pesquisa de cards do GitHub ("GitHub Cards App").
+
+This is a React project from the Pluralsight's course "React: Getting Started", using most of its components as classes.
+With this simple app, we can search for people in GitHub using its API, and show it as cards.
